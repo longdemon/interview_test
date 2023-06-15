@@ -786,7 +786,6 @@ h4 {
 /*================BENEFITS===============*/
 .benefit__list {
     display: grid;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     grid-template-columns: auto auto auto;
     row-gap: 2rem;
@@ -825,7 +824,11 @@ h4 {
 .benefit__img {
     text-align: center;
 }
-
+@media (max-width: 767.98px) {
+    .benefit__list {
+        grid-template-columns: auto;
+    }
+}
 /*================REASON===============*/
 .reason {
     background-color: #f8f8f8;
